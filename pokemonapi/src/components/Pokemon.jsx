@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import styles from './styles.module.css';
 
 const Pokemon = (props) => {
     const [pokemon, setPokemon] = useState([]);
@@ -10,7 +11,7 @@ const Pokemon = (props) => {
     };
     return (
         <div>
-            <button onClick={getPokemon}>Fetch Pokemon</button>
+            <button onClick={getPokemon} className={styles.btn}>Fetch Pokemon</button>
             {pokemon.length > 0 && pokemon.map((pokemon, index) => {
                 return (
                     <div key={index}>• {pokemon.name}</div> 
