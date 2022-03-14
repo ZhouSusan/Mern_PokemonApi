@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react';
 import styles from './styles.module.css';
 
 const Pokemon = (props) => {
-    const [pokemon, setPokemon] = useState([]);
+    const {pokemon, setPokemon} = props;
 
     const getPokemon = () => {
         fetch('https://pokeapi.co/api/v2/pokemon?limit=807')
