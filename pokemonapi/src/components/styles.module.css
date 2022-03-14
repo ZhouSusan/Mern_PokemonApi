@@ -8,3 +8,8 @@
     padding: 15px;
     margin-bottom: 20px;
 }
+
+.pokename {
+    font-size: larger;
+    margin-bottom: 3px;
+}

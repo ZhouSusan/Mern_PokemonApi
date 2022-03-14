@@ -1,14 +1,16 @@
 import './App.css';
+import Display from './components/Display';
 import Pokemon from './components/Pokemon';
 import React, {useState} from 'react';
 
 function App() {
 
-  const [pokemon, setPokemon] = useState([]);
+  const [pokemons, setPokemons] = useState([]);
 
   return (
     <div className="App">
-      <Pokemon pokemon={pokemon} setPokemon={setPokemon}/>
+      <Pokemon pokemons={pokemons} setPokemons={setPokemons}/>
+      <Display pokemons={pokemons}/>
     </div>
   );
 }
